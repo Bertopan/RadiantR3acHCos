@@ -1,0 +1,524 @@
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F4F1; /* Soft Cream */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    min-height: 100%; /* Ensures body takes full height */
+}
+
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F8F4F1; /* Soft Cream */
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    min-height: 100%; /* Ensures body takes full height */
+}
+
+/* Add these lines next */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-height: calc(100vh - 40px); /* Adjust min-height to account for the footer */
+    position: relative;
+    padding-bottom: 40px; /* Space for footer */
+    box-sizing: border-box;
+}
+
+/* Continue with existing CSS */
+
+/* Styling for the top banner */
+nav.top-banner {
+    background-color: #DDB8A8; /* Dusty Blush Pink */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the navigation items */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF; /* White */
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 24px;
+}
+
+nav ul li a:hover,
+nav ul li a.highlighted {
+    background-color: #B896A8; /* Slightly darker blush for hover */
+    color: #FFFFFF;
+}
+
+/* Centering the logo in the top banner */
+nav .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-logo {
+    height: 85px;
+}
+
+/* Styling for the main banner */
+.banner {
+    background: linear-gradient(to right, #DDB8A8, #F8F4F1); /* Dusty blush to soft cream */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner h1 {
+    font-family: 'allura';
+    color: #FFFFFF; /* White */
+    font-size: 40px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the tagline */
+.tagline h1 {
+    font-family: 'precious';
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 500px;
+    color: #3B3B3B; /* Deep Charcoal */
+}
+
+/* Grid layout for the categories */
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.categories h2 {
+    font-size: 30px;
+    margin-bottom: 0.5px;
+    grid-column: span 2;
+    text-align: center;
+    color: #3B3B3B; /* Deep Charcoal */
+}
+
+/* Styling for individual category items */
+.category {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #3B3B3B; /* Deep Charcoal */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.category img.main-image {
+    opacity: 1;
+}
+
+.category img.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.category:hover img.main-image {
+    opacity: 0;
+}
+
+.category:hover img.hover-image {
+    opacity: 1;
+}
+
+.category p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3B3B3B; /* Deep Charcoal */
+}
+
+/* Styling for the logo container */
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#logo {
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.video-ad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.video-details {
+    width: 100%;
+    max-width: 600px;
+}
+
+.video-details h2 {
+    margin-top: 20px;
+}
+
+.video-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.radio-ad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Add new radio ad styles here */
+.audio-player {
+    margin-bottom: 20px;
+}
+
+.radio-ad-details {
+    width: 100%;
+    max-width: 800px;
+    background-color: #FFFFFF; /* White */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.radio-ad-details h2 {
+    font-family: 'allura';
+    color: #3B3B3B; /* Deep Charcoal */
+    font-size: 24px;
+    font-weight: 700; /* Bolder text */
+    margin-top: 20px;
+}
+
+.radio-ad-details p {
+    color: #3B3B3B; /* Deep Charcoal */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.radio-ad-details ul {
+    margin: 20px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.radio-ad-details li {
+    font-size: 16px;
+    color: #3B3B3B; /* Deep Charcoal */
+    line-height: 1.6;
+}
+
+
+/* Styling for the new section */
+.more-info h2 {
+    text-align: center;
+    font-size: 30px; /* Adjust size as needed */
+    margin: 20px 0; /* Adjust spacing as needed */
+    color: #3B3B3B; /* Deep Charcoal */
+}
+
+/* Styling for the second set of category images */
+.categories.second-set {
+    margin-top: 40px; /* Add some space before the second set */
+}
+
+.categories.second-set .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categories.second-set img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #3B3B3B; /* Deep Charcoal */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.categories.second-set img.main-image {
+    opacity: 1;
+}
+
+.categories.second-set img.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.categories.second-set:hover img.main-image {
+    opacity: 0;
+}
+
+.categories.second-set:hover img.hover-image {
+    opacity: 1;
+}
+
+.categories.second-set p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3B3B3B; /* Deep Charcoal */
+}
+
+/* Styling for the Contact Us banner */
+.contact-banner {
+    background-color: #DDB8A8; /* Dusty Blush Pink */
+    color: #FFFFFF; /* White text */
+    padding: 60px; /* Adjust padding as needed */
+    text-align: left; /* Align text to the left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px; /* Adjust spacing as needed */
+    width: 100%; /* Extend the banner to the full width of the page */
+    position: relative;
+    box-sizing: border-box; /* Make sure the padding is included in the element's total width and height */
+    margin-bottom: 10px;
+}
+
+.contact-banner .content {
+    text-align: center; /* Center the header and content within the right section */
+    position: absolute;
+    right: 20px; /* Adjust position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contact-banner h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.contact-banner p {
+    margin: 2.5px 0;
+}
+
+.contact-banner img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+/* Styling for the footer text */
+.footer-text {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    font-size: 15px; /* Set the size as needed (10-15px) */
+    color: #3B3B3B; /* Deep Charcoal */
+}
+
+/* Styling for product description */
+.product-description, .how-to-use, .ingredients {
+    margin: 20px;
+    padding: 20px;
+    background-color: #F8F4F1; /* Soft Cream */
+    border: 1px solid #DDB8A8; /* Dusty Blush Pink */
+    border-radius: 10px;
+}
+
+.product-description h2, .how-to-use h2, .ingredients h2 {
+    color: #3B3B3B; /* Deep Charcoal */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-description p, .how-to-use p, .ingredients p {
+    color: #3B3B3B; /* Deep Charcoal */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.ingredients ul {
+    margin: 20px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.ingredients li {
+    font-size: 16px;
+    color: #3B3B3B; /* Deep Charcoal */
+    line-height: 1.6;
+}
+.ingredients li {
+    font-size: 16px;
+    color: #3B3B3B; /* Deep Charcoal */
+    line-height: 1.6;
+}
+
+/* Styling for the splash screen */
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F8F4F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#splash-screen img {
+    width: 100vw; /* 50% of the viewport width */
+    max-width: 1500px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+    animation: fadeOut 2s ease-in-out forwards;
+    animation-delay: 10s; /* Delay before starting the fade out */
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+/* Styling for the main content */
+#main-content {
+    display: none; /* Hidden initially */
+    opacity: 0; /* Start with transparency */
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fully visible after animation */
+    }
+}
+/* Marquee container */
+.image-marquee {
+    width: 100%;
+    overflow: hidden;
+    background-color: #F8F4F1; /* Match your website's background color */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align to the start */
+    pointer-events: none; /* Prevent clicking */
+}
+
+/* Marquee content */
+.marquee-content {
+    display: flex;
+    align-items: center;
+    animation: marquee 40s linear infinite; /* Adjust the duration as needed */
+    will-change: transform;
+}
+
+/* Individual images */
+.marquee-content img {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin: 0 1px; /* Adjust spacing as needed */
+}
+
+/* Marquee animation */
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Side Ad Styles */
+.side-ad {
+    position: absolute;
+    top: 50%; /* Adjust this value as needed */
+    transform: translateY(-50%);
+    width: 100px; /* Adjust width as needed */
+    z-index: 9999;
+}
+
+.side-ad img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center; /* Centers the image */
+}
+
+/* Left Ad Positioning */
+.left-ad {
+    left: 0;
+}
+
+/* Right Ad Positioning */
+.right-ad {
+    right: 0;
+}
+
