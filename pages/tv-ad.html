@@ -4,30 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ad Page</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Television Advertisement</h1> <!-- Change this accordingly -->
+        <h1>Television Advertisement</h1>
     </header>
     <main>
         <section class="video-ad">
-            <div class="video-thumbnail">
-                <img src="..\assets\videos\TV-ad.mp4" alt="Video Thumbnail">
-            </div>
-            <div class="video-details">
-                <h2>Member Involved</h2>
-                <ul>
-                    <li>Emole Lacon - main character</li>
-                    <li>Nicore - supporting character</li>
-                </ul>
-                <h2>Television Advertising</h2>
-                <p>Television remains a powerful medium for reaching broad audiences. Key benefits include:</p>
-                <ul>
-                    <li>Mass Reach</li>
-                    <li>Trust Factor</li>
-                    <li>Visual Storytelling</li>
-                </ul>
+            <div class="video-content">
+                <div class="video-thumbnail">
+                    <video controls>
+                        <source src="../assets/videos/TV-ad.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-details">
+                    <h2>Member Involved</h2>
+                    <ul>
+                        <li>Emole Lacon - main character</li>
+                        <li>Nicore - supporting character</li>
+                    </ul>
+                    <h2>Television Advertising</h2>
+                    <p>Television remains a powerful medium for reaching broad audiences. Key benefits include:</p>
+                    <ul>
+                        <li>Mass Reach</li>
+                        <li>Trust Factor</li>
+                        <li>Visual Storytelling</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
