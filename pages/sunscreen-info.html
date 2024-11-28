@@ -5,25 +5,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Info</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Set Arial as the default font */
+            font-size: 15px; /* Base font size */
+            background-color: #f4f4f4; /* Light background color */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add padding around the body */
+        }
+        .banner {
+            background: linear-gradient(to right, #DDB8A8, #F8F4F1); /* Dusty blush to soft cream */
+            text-align: center; /* Center align banner text */
+            padding: 10px 0; /* Padding for the banner */
+            margin-bottom: 20px; /* Space below the banner */
+            border-radius: 10px; /* Rounded corners for the banner */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the banner */
+        }
+        .banner h1 {
+            font-family: 'allura'; /* Use the specified font */
+            color: #3B3B3B; /* Dark gray */
+            font-size: 36px; /* Font size for banner heading */
+            margin: 0; /* Remove default margin */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+        }
+        header {
+            text-align: center; /* Center align header text */
+            margin-bottom: 20px; /* Space below header */
+        }
+        h1 {
+            font-size: 36px; /* Font size for main heading */
+            color: #3B3B3B; /* Dark gray */
+            margin: 0; /* Remove default margin */
+        }
+        .info-container {
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center content horizontally */
+            margin-bottom: 20px; /* Space below the image */
+        }
+        .left-side {
+            max-width: 500px; /* Set a maximum width for the image container */
+            margin-right: 20px; /* Space between image and text */
+        }
+        .left-side img {
+            width: 100%; /* Make image responsive */
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for images */
+        }
+        .content-section {
+            background: white; /* White background for content */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px; /* Padding inside the section */
+        }
+        h2 {
+            font-size: 24px; /* Font size for section headings */
+            color: #3B3B3B; /* Dark gray */
+            margin-top: 0; /* Remove top margin */
+            margin-bottom: 10px; /* Space below headings */
+            border-bottom: 2px solid #DDB8A8; /* Underline for emphasis */
+            padding-bottom: 5px; /* Padding below the heading */
+        }
+        p {
+            line-height: 1.6; /* Increase line height for readability */
+            margin: 10px 0; /* Margin for paragraphs */
+        }
+        ul {
+            margin-left: 20px; /* Indent unordered list */
+            list-style-type: disc; /* Bullet style */
+        }
+        li {
+            margin-bottom: 5px; /* Space between list items */
+        }
+    </style>
 </head>
 <body>
+    <div class="banner">
+        <h1>More info about WeGlow</h1>
+    </div>
     <header>
-        <h1 class="center-text">More Infos</h1>
+        <h1>More Infos</h1>
     </header>
     <main>
         <div class="info-container">
             <div class="left-side">
-                <img src="your-product-image.jpg" alt="Product Image">
-                <!-- Add more images as needed -->
+                <img src="../assets/images/product pics/IMG_20241128_063529.jpg" alt="Product Image">
             </div>
-            <div class="right-side">
+            <div class="content-section">
+                <h2>Description</h2>
+                <p>Experience the ultimate sun protection with WeGlow Sunscreen, a luxurious formula designed to shield your skin while leaving it feeling soft and radiant. Our high SPF 50 and PA+++ rating provide broad spectrum UVA/UVB protection, safeguarding your skin from the sun's harmful rays.</p>
+                <p>WeGlow Sunscreen is designed for everyone. Its gentle, non-comedogenic formula is suitable for all skin types, even the most sensitive. It's also paraben-free and leaves no white cast, making it ideal for all skin tones. The lightweight, non-sticky formula absorbs quickly, leaving your skin feeling soft, hydrated, and protected, not greasy. Enjoy your day with peace of mind, knowing your skin is safe and glowing with WeGlow Sunscreen. Whether you're enjoying a day at the beach, a hike in the mountains, or simply running errands, WeGlow Sunscreen is your perfect companion for a sun-kissed glow.</p>
+
+                <h2>How to Use</h2>
+                <ol>
+                    <li>Squeeze a right amount of sunscreen into your hand.</li>
+                    <li>Apply it at least 15 minutes before direct sun exposure.</li>
+                    <li>Gently spread it evenly across your face and neck.</li>
+                    <li>Don’t forget to apply into your ears, hairline, and back of your neck.</li>
+                    <li>Re-apply every two hours, especially after swimming or sweating for maximum sun protection.</li>
+                </ol>
+
+                <h2>Ingredients</h2>
                 <ul>
-                    <li>About</li>
-                    <li>Benefits</li>
-                    <li>How to Apply</li>
-                    <li>Ingredients</li>
-                    <li>Skin Tones</li>
+                    <li>Water</li>
+                    <li>Ethylhexyl Methoxycinnamate</li>
+                    <li>Cyclotetrasiloxane</li>
+                    <li>Cyclopentasiloxane</li>
+                    <li>Cetyl Alcohol</li>
+                    <li>Glyceryl Stearate</li>
+                    <li>Ceteareth-20</li>
+                    <li>Ceteareth-12</li>
+                    <li>Cetearyl Alcohol</li>
+                    <li>Cetyl Palmitate</li>
+                    <li>Butyl Methoxydibenzoylmethane</li>
+                    <li>Octocrylene</li>
+                    <li>Benzyl Alcohol</li>
+                    <li>Glyceryl Caprylate</li>
+                    <li>Glyceryl Undecylenate</li>
+                    <li>Butyrospermum Parkii</li>
+                    <li>C12-15 Alkyl Benzoate</li>
+                    <li>Titanium Dioxide</li>
+                    <li>Aluminum Hydroxide</li>
+                    <li>Dimethicone/Methicone Copolymer</li>
+                    <li>Sorbitan Palmitate</li>
+                    <li>Sorbitan Olivate</li>
+                    <li>Carbomer</li>
+                    <li>Triethanolamine</li>
+                    <li>Bisabolol</li>
+                    <li>Panthenol</li>
+                    <li>Sodium Polyacrylate</li>
+                    <li>Tocopheryl Acetate</li>
+                    <li>Citric Acid</li>
+                    <li>Tetrasodium EDTA</li>
+                    <li>Benzylidene Dimethoxydimethylindanone</li>
                 </ul>
+
+                <h2>Benefits</h2>
+                <p>We Glow Sunscreen protects your skin from harmful UV rays, preventing sunburn. It reduces the risk of skin cancer by protecting against long-term damage. Regular use helps prevent premature aging signs like wrinkles and dark spots. It also keeps your skin tone even and vibrant. Using it daily keeps your skin healthy and beautiful.</p>
             </div>
         </div>
     </main>

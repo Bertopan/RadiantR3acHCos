@@ -3,36 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ad Page</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="../style.css"> <!-- Link to your CSS file -->
+    <title>Social Media Advertisement</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Set Arial as the default font */
+            font-size: 15px; /* Base font size */
+            background-color: #f4f4f4; /* Light background color */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add padding around the body */
+        }
+        .banner {
+            background: linear-gradient(to right, #DDB8A8, #F8F4F1); /* Dusty blush to soft cream */
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px; /* Add space below the banner */
+        }
+        .banner h1 {
+            font-family: 'allura'; /* Use the specified font */
+            color: #3B3B3B; /* Dark gray */
+            font-size: 50px; /* Large font size */
+            margin: 0; /* Remove default margin */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+        }
+        .video-ad {
+            display: flex;
+            flex-direction: column; /* Change to column layout */
+            align-items: center; /* Center content horizontally */
+            background: white; /* White background for content */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px; /* Padding inside the section */
+            margin-bottom: 30px; /* Space below each section */
+        }
+        .video-thumbnail video {
+            width: 90%; /* Make the video larger, adjust as needed */
+            max-width: 800px; /* Set a maximum width for larger screens */
+            border-radius: 10px; /* Rounded corners for videos */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for videos */
+        }
+        h2 {
+            font-size: 24px; /* Font size for section headings */
+            color: #3B3B3B; /* Dark gray */
+            margin-top: 20px; /* Add space above headings */
+            margin-bottom: 10px; /* Add space below headings */
+            border-bottom: 2px solid #DDB8A8; /* Underline for emphasis */
+            padding-bottom: 10px; /* Padding below the heading */
+            font-weight: bold; /* Make headings bold */
+        }
+        p {
+            line-height: 1.6; /* Increase line height for readability */
+            margin: 10px 0; /* Margin for paragraphs */
+        }
+        ul {
+            margin-left: 20px; /* Indent unordered list */
+            list-style-type: disc; /* Bullet style */
+        }
+        li {
+            margin-bottom: 5px; /* Space between list items */
+        }
+        .team-section {
+            background: #fff; /* White background for team section */
+            border: 2px solid #DDB8A8; /* Border color matching the banner */
+            border-radius: 10px; /* Rounded corners */
+            padding: 15px; /* Padding inside the section */
+            margin-bottom: 20px; /* Space below team section */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .team-section h3 {
+            margin-top: 0; /* Remove top margin for team heading */
+            color: #DDB8A8; /* Color for team heading */
+        }
+        .advertising-info {
+            background: white; /* White background for advertising info */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px; /* Padding inside the section */
+            margin-bottom: 30px; /* Space below advertising info section */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Social Media Advertisement</h1> <!-- Change this accordingly -->
-    </header>
+    <div class="banner">
+        <h1>Social Media Advertisement</h1>
+    </div>
     <main>
         <section class="video-ad">
             <div class="video-thumbnail">
-                <img src="video-thumbnail.png" alt="Video Thumbnail">
+                <video controls>
+                    <source src="../assets/videos/Social Media Ad.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
-            <div class="video-details">
-                <h2>Script</h2>
-                <p>Your video script goes here...</p>
-                <h2>Layout</h2>
-                <p>Details about the layout...</p>
-                <h2>Member Involved</h2>
-                <ul>
-                    <li>Emole Lacon - main character</li>
-                    <li>Nicore - supporting character</li>
-                </ul>
-                <h2>Television Advertising</h2>
-                <p>Television remains a powerful medium for reaching broad audiences. Key benefits include:</p>
-                <ul>
-                    <li>Mass Reach</li>
-                    <li>Trust Factor</li>
-                    <li>Visual Storytelling</li>
-                </ul>
-            </div>
+        <section class="team-section">
+            <h3>Sunscribe</h3>
+            <p><strong>Leader:</strong> Yambao, Richard</p>
+            <p><strong>Members:</strong></p>
+            <ul>
+                <li>Arinuelo, Shiela Mae Ann - Benefits of the product, and Actor</li>
+                <li>Buduan, Patricia Ann - Shade and Actor</li>
+                <li>Garung, Ella - How to use the product, Key benefits, and Actor</li>
+                <li>Patawaran, Angela Marie - Ingredients, Key Benefits, and Actor</li>
+                <li>Lampa, Allen Justin - Benefits of the product and Technical Support</li>
+                <li>Soriano, Niña Karylle - What is Social Media Advertising, Product Concept, and Actor</li>
+                <li>Vergara, Jocelle - What is Social Media Advertising, Product Concept, and Actor</li>
+            </ul>
+        </section>
+
+        <section class="advertising-info">
+            <h2>Social Media Advertising</h2>
+            <p>Social media advertising is a form of digital marketing in which paid ads are served to a target audience via social media networks. It aims to persuade consumers to act, such as making a purchase or adopting a certain viewpoint. These ads allow marketers to reach desired consumers, promote their brand, products, services, ideas, and drive sales on popular media channels that house billions of active users. It also helps you to grow your businesses in a lot of ways with the social media advertising goals such as:</p>
+            <ul>
+                <li>Targeted Reach</li>
+                <li>Increased Brand Awareness</li>
+                <li>Engagement</li>
+                <li>Lead Generation</li>
+                <li>Cost-Effectiveness</li>
+                <li>Real-Time Analytics</li>
+                <li>Building the Community</li>
+            </ul>
+            <p>You can use social media platforms to advertise, like Facebook, Instagram, Twitter, LinkedIn, Pinterest, TikTok, and Snapchat. With these platforms, you can use Ad Formats like Image Ads, Video Ads, Carousel Ads, Stories Ads, and Collection Ads that have target options which are Demographic, Interests, Behavior, and customs of audiences. That’s why social media advertising is a powerful tool to connect and build relationships with your audiences and increase brand awareness because social media access has billions of users globally.</p>
+
+            <h2>Key Benefits</h2>
+            <ul>
+                <li>It has SPF 50 and PA+++ effectively provide broad spectrum protection against harmful UV rays.</li>
+                <li>Paraben-free.</li>
+                <li>Non-comedogenic.</li>
+                <li>Hypoallergenic.</li>
+                <li>Dermatologist tested.</li>
+            </ul>
         </section>
     </main>
 </body>
