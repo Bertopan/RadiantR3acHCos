@@ -5,49 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Print Ad</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Set Arial as the default font */
+            font-size: 15px; /* Base font size */
+            background-color: #f4f4f4; /* Light background color */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add padding around the body */
+        }
+        .banner {
+            background: linear-gradient(to right, #DDB8A8, #F8F4F1); /* Dusty blush to soft cream */
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px; /* Add space below the banner */
+        }
+        .banner h1 {
+            font-family: 'allura'; /* Use the specified font */
+            color: #3B3B3B; /* Dark gray */
+            font-size: 50px; /* Large font size */
+            margin: 0; /* Remove default margin */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+        }
+        .container {
+            max-width: 1200px; /* Limit the width of the container */
+            margin: auto; /* Center the container */
+        }
+        .item {
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Center items vertically */
+            margin-bottom: 20px; /* Add some spacing between items */
+            background: white; /* White background for items */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            overflow: hidden; /* Prevent overflow */
+            transition: transform 0.3s; /* Smooth transition */
+        }
+        .item:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+        }
+        .item-image {
+            width: 500px; /* Ensure images have the same width */
+            margin-right: 20px; /* Add space between image and text */
+            border-radius: 10px 0 0 10px; /* Rounded corners for left side */
+        }
+        .item-text {
+            flex: 1; /* Allow text to take up remaining space */
+            font-size: 1.2em; /* Increase font size for item text */
+            font-weight: bold; /* Make the text bold */
+            padding: 20px; /* Add padding inside text area */
+        }
+        .right-align {
+            text-align: right; /* Align text to the right */
+        }
+        h3 {
+            font-size: 1.5em; /* Larger font size for headings */
+            font-weight: bold; /* Make the heading bold */
+            margin-bottom: 10px; /* Space below heading */
+            color: #333; /* Darker color for headings */
+        }
+        ol {
+            margin-left: 20px; /* Indent ordered list */
+            font-size: 1.2em; /* Increase font size for ordered list */
+        }
+        /* Additional styles for alternating layout */
+        .item:nth-child(even) .item-image {
+            margin-right: 0; /* Remove right margin for even items */
+            margin-left: 20px; /* Add left margin for even items */
+        }
+        .item:nth-child(even) .item-text {
+            order: 1; /* Move text to the left for even items */
+        }
+        .item:nth-child(even) .item-image {
+            order: 2; /* Move image to the right for even items */
+        }
+    </style>
 </head>
 <body>
     <main>
+        <div class="banner">
+            <h1>More Information about Lux Aura</h1>
+        </div>
         <div class="container">
             <div class="item">
-                <img src="../assets/images/Photoshoot/IMG_20241113_151436.jpg" alt="Image 1" class="item-image" style="float: right; width: 500px;">
-                <p class="item-text" style="clear: both;">1st sentence</p>
+                <img src="../assets/images/Photoshoot/IMG_20241113_151436.jpg" alt="Image 1" class="item-image">
+                <div class="item-text ">
+                    <p>Experience the magic of three in one glossy, matte, and raincoat that won’t fade or transfer.</p>
+                    <p>In the shade of peach dream, this product is transfer proof and moisturizing to use.</p>
+                    <p>This lip tint provides a rich, vibrant color and a smooth, hydrating formula.</p>
+                    <p>The lip tint glides on effortlessly and offers full coverage with one swipe, leaving lips feeling soft and moisturized.</p>
+                    <p>In addition, it is available in a range of shades and has a lightweight, non-drying texture.</p>
+                </div>
             </div>
             <div class="item">
-                <p class="item-text" style="float: right;">2nd sentence</p>
-                <img src="../assets/images/Photoshoot/IMG_20241113_151658.jpg" alt="Image 2" class="item-image" style="float: left; width: 500px;">
+                <img src="../assets/images/Photoshoot/IMG_20241113_151658.jpg" alt="Image 2" class="item-image">
+                <div class="item-text right-align">
+                    <p>Inspired by the shimmering waves of summer lakes, this silver-plated lip gloss combines deep matte and glossy textures for a unique and captivating effort.</p>
+                    <p>This product is 3 in 1 Lip Tint, 48-hour long-lasting, transfer proof and waterproof, and moisturizes and plumps.</p>
+                </div>
             </div>
             <div class="item">
-                <img src="../assets/images/Photoshoot/IMG_20241113_151735.jpg" alt="Image 3" class="item-image" style="float: right; width: 500px;">
-                <p class="item-text" style="clear: both;">3rd sentence</p>
-            </div>
-            <div class="item">
-                <p class="item-text" style="float: right;">4th sentence</p>
-                <img src="../assets/images/Photoshoot/IMG_20241113_145619.jpg" alt="Image 4" class="item-image" style="float: left; width: 500px;">
-            </div>
-            <div class="item">
-                <img src="../assets/images/Photoshoot/IMG_20241113_145219.jpg" alt="Image 5" class="item-image" style="float: right; width: 500px;">
-                <p class="item-text" style="clear: both;">5th sentence</p>
-            </div>
-            <div class="item">
-                <p class="item-text" style="float: right;">6th sentence</p>
-                <img src="../assets/images/Photoshoot/IMG_20241113_144702.jpg" alt="Image 6" class="item-image" style="float: left; width: 500px;">
-            </div>
-            <div class="item">
-                <img src="../assets/images/Photoshoot/IMG_20241113_151436.jpg" alt="Image 7" class="item-image" style="float: right; width: 500px;">
-                <p class="item-text" style="clear: both;">7th sentence</p>
-            </div>
-            <div class="item">
-                <p class="item-text" style="float: right;">8th sentence</p>
-                <img src="../assets/images/Photoshoot/IMG_20241113_151436.jpg" alt="Image 8" class="item-image" style="float: left; width: 500px;">
-            </div>
- <div class="item">
-                <img src="../assets/images/Photoshoot/IMG_20241113_151436.jpg" alt="Image 9" class="item-image" style="float: right; width: 500px;">
-                <p class="item-text" style="clear: both;">9th sentence</p>
-            </div>
-            <div class="item">
-                <p class="item-text" style="float: right;">10th sentence</p>
-                <img src="../assets/images/Photoshoot/IMG_20241113_151436.jpg" alt="Image 10" class="item-image" style="float: left; width: 500px;">
+                <img src="../assets/images/Photoshoot/IMG_20241113_151735.jpg" alt="Image 3" class="item-image">
+                <div class="item-text">
+                    <h3>How to Use:</h3>
+                    <ol>
+                        <li>Apply an even layer of the matte colored lip lacquer and wait 60 seconds for it to set (avoid pressing your lips together during this time).</li>
+                        <li>Layer a small amount of the “raincoat” multiple times to create a protective film for long-lasting color.</li>
+                        <li>If you prefer a matte finish, gently blot off the “raincoat” with a tissue after it has set.</li>
+                    </ol>
+                </div>
             </div>
         </div>
     </main>

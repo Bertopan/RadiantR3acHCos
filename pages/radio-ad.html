@@ -3,57 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Radio Advertisement</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Set Arial as the default font */
+            font-size: 15px; /* Base font size */
+            background-color: #f4f4f4; /* Light background color */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add padding around the body */
+        }
+        .banner {
+            background: linear-gradient(to right, #DDB8A8, #F8F4F1); /* Dusty blush to soft cream */
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px; /* Add space below the banner */
+        }
+        .banner h1 {
+            font-family: 'allura'; /* Use the specified font */
+            color: #3B3B3B; /* Dark gray */
+            font-size: 50px; /* Large font size */
+            margin: 0; /* Remove default margin */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+        }
+        .radio-ad {
+            background: white; /* White background for radio ad section */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px; /* Padding inside the section */
+            margin-bottom: 20px; /* Space below each section */
+        }
+        h2 {
+            font-size: 24px; /* Font size for section headings */
+            color: #3B3B3B; /* Dark gray */
+            margin-top: 0; /* Remove top margin */
+        }
+        p {
+            line-height: 1.6; /* Increase line height for readability */
+            margin: 10px 0; /* Margin for paragraphs */
+        }
+        ul {
+            margin-left: 20px; /* Indent unordered list */
+            list-style-type: disc; /* Bullet style */
+        }
+        li {
+            margin-bottom: 5px; /* Space between list items */
+        }
+        .team-section {
+            background: #fff; /* White background for team section */
+            border: 2px solid #DDB8A8; /* Border color matching the banner */
+            border-radius: 10px; /* Rounded corners */
+            padding: 15px; /* Padding inside the section */
+            margin-bottom: 20px; /* Space below team section */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .audio-player {
+            margin: 20px 0; /* Margin for audio player */
+            padding: 20px; /* Padding around the audio player */
+            background-color: #f9f9f9; /* Light background for emphasis */
+            border: 2px solid #DDB8A8; /* Border color matching the banner */
+            border-radius: 10px; /* Rounded corners */
+            text-align: center; /* Center the audio controls */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        .content-section {
+            background: #fff; /* White background for content */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px; /* Padding inside the section */
+            margin-bottom: 20px; /* Space below each section */
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <h1>Radio Advertisement</h1> <!-- Change this accordingly -->
-    </header>
+    <div class="banner">
+        <h1>Radio Advertisement</h1>
+    </div>
     <main>
         <section class="radio-ad">
             <div class="audio-player">
                 <audio controls>
                     <source src="../assets/audios/Radio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
                 </audio>
             </div>
-            <div class="radio-ad-details">
-                <h2>Members Vocals</h2>
+            <div class="team-section">
+                <h3>RADSCENT</h3>
+                <p><strong>Leader:</strong> Santillan, Famela Yzabel G.</p>
+                <p><strong>Members:</strong></p>
                 <ul>
-                    <li>Lance Armada - Leading Male</li>
-                    <li>Bernadette Bautista - Leading Female</li>
-                    <li>Kyla Alfonso - Narrator</li>
+                    <li>Alfonso, Kyla - narrator voice over</li>
+                    <li>Armada, Lance Gabriel M. - male voice over and product name</li>
+                    <li>Bautista, Bernadette Mae - female voice over</li>
+                    <li>Sacro, Zyra Rose N. - product concept</li>
                 </ul>
+            </div>
+            <div class="content-section">
                 <h2>Radio Advertising</h2>
-                <p>Radio advertising utilizes radio broadcasts to market products, services, or brands to a broad audience...</p>
+                <p>Radio advertising utilizes radio broadcasts to market products, services, or brands to a broad audience. Typically ranging from 15 to 60 seconds, these ads can be broadcasted on AM, FM, or digital radio stations in the form of short audio spots. Radio advertising includes the target audience, creativity and production, frequency and reach, flexibility, and local and national reach as key elements. Advertising on the radio is a powerful method for promoting your brand to a wide audience and is also a strong tool for captivating listeners with audio narratives, establishing brand recognition, and stimulating consumer participation.</p>
+                
                 <h2>Advantages of Radio Advertising</h2>
                 <ul>
-                    <li><strong>Broad reach</strong> – Radio ads enable businesses to connect with a wide and varied audience, 
-                        including individuals who are driving, working, or tuned in at home. By using the correct 
-                        messaging and targeting, they are able to reach out to potential customers who are highly 
-                        likely to have an interest in their product or service </li>
-                    <li><strong>Cost-effective</strong> – Advertisers can achieve a successful radio campaign without 
-                        overspending by taking advantage of lower production costs and airtime rates.</li>
-                    <li><strong>Engaging</strong> – Radio commercials enable businesses to produce captivating material that can 
-                        grasp their audience’s interest with the use of sound effects, music, and voice talent. This 
-                        can make their brand noticeable and leave a lasting impact on potential customers. </li>
-                    <li><strong>Targeting</strong> – Broadcasting stations serve particular audiences, enabling advertisers to aim 
-                        their messages at specific demographics or geographic regions.</li>
-                    <li><strong>Frequency</strong> – Radio commercials enable a company to establish a stable and frequent 
-                        presence in the lives of their target audience. By broadcasting radio ads all day, a brand 
-                        gets multiple chances to be seen by listeners, which boosts brand recognition and the 
-                        chance of making a purchase. </li>
+                    <li><strong>Broad reach</strong> - Radio ads enable businesses to connect with a wide and varied audience, including individuals who are driving, working, or tuned in at home. By using the correct messaging and targeting, they are able to reach out to potential customers who are highly likely to have an interest in their product or service.</li>
+                    <li><strong>Cost-effective</strong> – Advertisers can achieve a successful radio campaign without overspending by taking advantage of lower production costs and airtime rates.</li>
+                    <li><strong>Engaging</strong> – Radio commercials enable businesses to produce captivating material that can grasp their audience’s interest with the use of sound effects, music, and voice talent. This can make their brand noticeable and leave a lasting impact on potential customers.</li>
+                    <li><strong>Targeting</strong> – Broadcasting stations serve particular audiences, enabling advertisers to aim their messages at specific demographics or geographic regions.</li>
+                    <li><strong>Frequency</strong> – Radio commercials enable a company to establish a stable and frequent presence in the lives of their target audience. By broadcasting radio ads all day, a brand gets multiple chances to be seen by listeners, which boosts brand recognition and the chance of making a purchase.</li>
                 </ul>
+                
                 <h2>Types of Radio Advertising</h2>
                 <ul>
-                    <li><strong>Jingle</strong> - Jingle is used in advertising to help people remember a brand or a product through a short, catchy 
-                        tune or song. As these jingles are easy to remember and can be played repeatedly, it is considered 
-                        as the most used type of radio advertising.</li>
-                    <li><strong>Time Check</strong> - Time check is a short announcement that tells listeners what time it is. This type of advertising is 
-                        often used by radio stations to promote upcoming shows or events. </li>
-                    <li><strong>Radio Sponsorship</strong> - Radio sponsorship involves a company or organization paying for a specific program or segment 
-                        on a radio station. In exchange, the sponsor is given advertising time during the program or 
-                        segment.</li>
+                    <li><strong>Jingle</strong> - Jingle is used in advertising to help people remember a brand or a product through a short, catchy tune or song. As these jingles are easy to remember and can be played repeatedly, it is considered as the most used type of radio advertising.</li>
+                    <li><strong>Time Check</strong> - Time check is a short announcement that tells listeners what time it is. This type of advertising is often used by radio stations to promote upcoming shows or events.</li>
+                    <li><strong>Radio Sponsorship</strong> - Radio sponsorship involves a company or organization paying for a specific program or segment on a radio station. In exchange, the sponsor is given advertising time during the program or segment.</li>
                 </ul>
             </div>
         </section>

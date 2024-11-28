@@ -5,36 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ad Page</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Set Arial as the default font */
+            background-color: #f4f4f4; /* Light background color */
+            color: #333; /* Dark gray for text */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add padding around the body */
+        }
+        .banner {
+            background: linear-gradient(to right, #DDB8A8, #F8F4F1); /* Dusty blush to soft cream */
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px; /* Add space below the banner */
+        }
+        .banner h1 {
+            font-family: 'allura'; /* Use the specified font */
+            color: #3B3B3B; /* Dark gray */
+            font-size: 50px; /* Large font size */
+            margin: 0; /* Remove default margin */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+        }
+        .video-ad {
+            background: white; /* White background for the video section */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px; /* Padding inside the section */
+            max-width: 600px; /* Max width for the video section */
+            margin: auto; /* Center the section */
+        }
+        .video-thumbnail {
+            text-align: center; /* Center align the video */
+        }
+        video {
+            width: 80%; /* Set video width to 80% of the container */
+            border-radius: 10px; /* Rounded corners for the video */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the video */
+        }
+        .video-details {
+            margin-top: 20px; /* Space above the details */
+        }
+        h2 {
+            font-size: 24px; /* Font size for section headings */
+            color: #3B3B3B; /* Dark gray */
+            margin-top: 0; /* Remove top margin */
+        }
+        h3 {
+            font-size: 20px; /* Font size for sub-section headings */
+            color: #AFAFAF; /* Gray color for sub-section headings */
+            margin: 15px 0; /* Margin for sub-section headings */
+        }
+        p {
+            line-height: 1.6; /* Increase line height for readability */
+            margin: 10px 0; /* Margin for paragraphs */
+        }
+        ul {
+            margin-left: 20px; /* Indent unordered list */
+            list-style-type: disc; /* Bullet style */
+        }
+        li {
+            margin-bottom: 5px; /* Space between list items */
+        }
+        .team-section {
+            background: #fff; /* White background for team section */
+            border: 2px solid #DDB8A8; /* Border color matching the banner */
+            border-radius: 10px; /* Rounded corners */
+            padding: 15px; /* Padding inside the section */
+            margin-bottom: 20px; /* Space below team section */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        .team-section h3 {
+            margin-top: 0; /* Remove top margin for team heading */
+            color: #DDB8A8; /* Color for team heading */
+        }
+        .info-section {
+            margin-top: 20px; /* Space above the information section */
+            padding: 15px; /* Padding inside the information section */
+            background: #f9f9f9; /* Light background for information section */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the information section */
+        }
+        .info-section h2 {
+            color: #3B3B3B; /* Dark gray for the section heading */
+        }
+        .info-section h3 {
+            color: #DDB8A8; /* Color for the key benefits heading */
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <div class="banner">
         <h1>Television Advertisement</h1>
-    </header>
-    <main>
-        <section class="video-ad">
-            <div class="video-content">
-                <div class="video-thumbnail">
-                    <video controls>
-                        <source src="../assets/videos/TV-ad.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-                <div class="video-details">
-                    <h2>Member Involved</h2>
+    </div>
+
+    <div class="video-ad">
+        <div class="video-content">
+            <div class="video-thumbnail">
+                <video controls>
+                    <source src="../assets/videos/TV-ad.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-details">
+                <h2>TV Advertising Group Contributions</h2>
+                
+                <div class="team-section">
+                    <h3>From TV Group</h3>
+                    <p><strong>Leader:</strong> Puri, Ashley</p>
+                    <p><strong>Members:</strong></p>
                     <ul>
-                        <li>Emole Lacon - main character</li>
-                        <li>Nicore - supporting character</li>
+                        <li>Agustin, John Vincent G. – Extra Character and Description of the Product</li>
+                        <li>Arabes, Jordan T. – Extra Character and Description of the Product</li>
                     </ul>
-                    <h2>Television Advertising</h2>
-                    <p>Television remains a powerful medium for reaching broad audiences. Key benefits include:</p>
+                </div>
+
+                <div class="team-section">
+                    <h3>From Radio Group</h3>
                     <ul>
-                        <li>Mass Reach</li>
-                        <li>Trust Factor</li>
-                        <li>Visual Storytelling</li>
+                        <li>Bautista, Bernadette Mae – One of the Main Characters</li>
+                    </ul>
+                </div>
+
+                <div class="team-section">
+                    <h3>From 1st Collab Group</h3>
+                    <ul>
+                        <li>Buenacifra, Jan Louise P. – Extra Character, Production</li>
+                        <li>Cabrera, Danica O. – One of the Main Characters</li>
+                        <li>Cadiz, John Patrick B. – Extra Character, Description of the Product</li>
+                        <li>Canlas, Aizel Ann A. – One of the Main Characters, Production, Created the Product Logo, and Props</li>
+                        <li>Cruz, Christine Joy S. – Extra Character and Description of the Product</li>
+                        <li>David, Shernna S. – Extra Character, Description of the Product, Production, and Props</li>
+                        <li>Del Rosario, Hannahlyn C. – Extra Character, Description of the Product</li>
+                        <li>Echevarria, Karen Claire C. – Extra Character and Description of the Product</li>
+                        <li>Espiritu, Jessica M. – Extra Character and Description of the Product</li>
+                        <li>Garcia, Princess R. – Extra Character, Props, and Description of the Product</li>
+                        <li>Lopez, Reynan C. – Extra Character and Description of the Product</li>
+                        <li>Lorenzana, Jericho – Extra Character, Scriptwriter, and Description of the Product</li>
+                        <li>Manaloto, George Nathaniel M. – Extra Character, Scriptwriter, Props, and Description of the Product</li>
+                        <li>Rementilla, Gwen A. – Extra Character and Description of the Product</li>
+                        <li>Serrano, Trisha Ann B. – Extra Character and Description of the Product</li>
+                        <li>Soriano, Diana Nicole – One of the Main Characters</li>
+                    </ul>
+                </div>
+
+                <div class="team-section">
+                    <h3>From 2nd Collab Group</h3>
+                    <ul>
+                        <li>Corsino, Jenny – One of the Main Characters</li>
+                        <li>Lingat, Alliyah Yshin – Extra Character</li>
+                    </ul>
+                </div>
+
+                <div class="info-section">
+                    <h2>TV Advertising</h2>
+                    <p>Television commercials are a form of marketing that utilize brief video clips to endorse products, services, or brands on TV. Usually, these ads are placed during certain shows to effectively reach the desired audience. TV ads frequently use persuasive tactics, such as memorable slogans, emotional appeals, and captivating visuals. Advertisers strive to craft memorable messages that connect with audiences, prompting them to recall the brand.</p>
+                    <p>Advertisements frequently consist of prompts for action, encouraging customers to buy or go to a specific website. TV commercial success is evaluated by gauging metrics like reach, frequency, and audience involvement. In general, TV commercials are essential for influencing how consumers view products and boosting sales.</p>
+                    
+ <h3>Key Benefits:</h3>
+                    <ul>
+                        <li><strong>Visual Appeal:</strong> The commercial uses strong visuals to showcase the product's benefits.</li>
+                        <li><strong>Target Audience Reach:</strong> By featuring a diverse group of women, the commercial appeals to a wide audience, suggesting the product is suitable for a variety of skin types and ages.</li>
+                        <li><strong>Trust and Credibility:</strong> The commercial features real women, which can build trust and credibility with viewers.</li>
                     </ul>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
 </body>
 </html>

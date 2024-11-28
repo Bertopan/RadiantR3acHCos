@@ -4,12 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Info</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Set Arial as the default font */
+            font-size: 16px; /* Base font size */
+            background-color: #f4f4f4; /* Light background color */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add padding around the body */
+            color: #3B3B3B; /* Dark gray for text */
+        }
+        .banner {
+            background: linear-gradient(to right, #DDB8A8, #F8F4F1); /* Dusty blush to soft cream */
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 8px; /* Rounded corners for the banner */
+            margin-bottom: 30px; /* Add space below the banner */
+        }
+        .banner h1 {
+            font-family: 'Allura', cursive; /* Use a decorative font */
+            color: #3B3B3B; /* Dark gray */
+            font-size: 48px; /* Large font size */
+            margin: 0; /* Remove default margin */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Softer text shadow */
+        }
+        .info-container {
+            display: flex; /* Use flexbox for layout */
+            background: white; /* White background for content */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+            padding: 20px; /* Padding inside the section */
+            margin-bottom: 30px; /* Space below each section */
+        }
+        .left-side {
+            flex: 1; /* Take up equal space */
+            margin-right: 20px; /* Space between image and text */
+        }
+        .left-side img {
+            width: 100%; /* Responsive image */
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for images */
+        }
+        .right-side {
+            flex: 2; /* Take up more space */
+        }
+        h2 {
+            font-size: 26px; /* Font size for section headings */
+            color: #DDB8A8; /* Soft blush for headings */
+            margin-top: 0; /* Remove top margin */
+            border-bottom: 2px solid #DDB8A8; /* Underline for emphasis */
+            padding-bottom: 10px; /* Padding below the heading */
+        }
+        p {
+            line-height: 1.8; /* Increase line height for readability */
+            margin: 15px 0; /* Margin for paragraphs */
+        }
+        ul {
+            margin-left: 20px; /* Indent unordered list */
+            list-style-type: disc; /* Bullet style */
+        }
+        li {
+            margin-bottom: 8px; /* Space between list items */
+            position: relative; /* Position for pseudo-element */
+        }
+        li::before {
+            content: "✔️"; /* Custom bullet point */
+            position: absolute; /* Positioning */
+            left: -20px; /* Space to the left */
+            color: #DDB8A8; /* Color for bullet point */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1 class="center-text">More Infos</h1>
-    </header>
+    <div class="banner">
+        <h1>More Information about Li Monré Eau de Parfum</h1>
+    </div>
     <main>
         <div class="info-container">
             <div class="left-side">
@@ -17,39 +87,39 @@
                 <!-- Add more images as needed -->
             </div>
             <div class="right-side">
-                <ul>
-                    <section class="product-description">
-                        <h2>PRODUCT DESCRIPTION</h2>
-                        <p>Radiant R3acH introduces Li Monré Eau de Parfum. Pushing the boundaries of this perfume’s extraordinary powers even further, Li Monré Eau de Parfum amplifies the world with an intensified magnetic signature. Li Monré Eau de Parfum features noble ingredients, sustainable sourcing, and an infinite olfactive trail, carrying with it deeply positive feelings. Fuelled by an incandescent light, Li Monré inner strength knows no bounds; the extraordinary steps into a new dimension. Li Monré Eau de Parfum amplifies the magnetic notes of the original scent in a more sensual and bold iteration. With floral, woody, and amber notes, the new fragrance for women features warmer nuances, vibrating through the facetted glass of its unique bottle. The perfume is housed in an ethereal, crystal-clear glass bottle with delicate angelic detailing and a soft silver cap, reflecting its heavenly and graceful nature. Perfect for those who seek a fragrance that embodies purity and elegance, Li Monré offers a breathtaking and unforgettable olfactory experience.</p>
-                    </section>
-                    <section class="how-to-use">
-                        <h2>HOW TO USE</h2>
-                        <p>Spray a cloud of Li Monré Eau de Parfum and let the generous notes fall gently on your hair and your clothing to create a magnetic halo around you. For even more intensity, apply the fragrance directly to your skin’s pulse points: your neck, your wrists, your elbows.</p>
-                    </section>
-                    <section class="ingredients">
-                        <h2>INGREDIENTS</h2>
-                        <ul>
-                            <li>Parfum / fragrance</li>
-                            <li>aqua / water / eau</li>
-                            <li>benzyl salicylate</li>
-                            <li>benzyl alcohol</li>
-                            <li>linalool</li>
-                            <li>diethylamino hydroxybenzoyl hexyl benzoate</li>
-                            <li>coumarin</li>
-                            <li>hydroxycitronellal</li>
-                            <li>hexyl cinnamal</li>
-                            <li>methyl anthranilate</li>
-                            <li>limonene</li>
-                            <li>citronellol</li>
-                            <li>benzyl benzoate</li>
-                            <li>geraniol</li>
-                            <li>eugenol</li>
-                            <li>citral</li>
-                            <li>isoeugenol</li>
-                            <li>ci 19140</li>
-                        </ul>
-                    </section>                                      
-                </ul>
+                <section class="product-description">
+                    <h2>Product Description</h2>
+                    <p>Radiant R3acH introduces Li Monré Eau de Parfum. Pushing the boundaries of this perfume’s extraordinary powers even further, Li Monré Eau de Parfum amplifies the world with an intensified magnetic signature. Li Monré Eau de Parfum features noble ingredients , sustainable sourcing, and an infinite olfactive trail, carrying with it deeply positive feelings. Fuelled by an incandescent light, Li Monré's inner strength knows no bounds; the extraordinary steps into a new dimension. Li Monré Eau de Parfum amplifies the magnetic notes of the original scent in a more sensual and bold iteration. With floral, woody, and amber notes, the new fragrance for women features warmer nuances, vibrating through the facetted glass of its unique bottle. The perfume is housed in an ethereal, crystal-clear glass bottle with delicate angelic detailing and a soft silver cap, reflecting its heavenly and graceful nature. Perfect for those who seek a fragrance that embodies purity and elegance, Li Monré offers a breathtaking and unforgettable olfactory experience.</p>
+                </section>
+
+                <section class="how-to-use">
+                    <h2>How to Use</h2>
+                    <p>Spray a cloud of Li Monré Eau de Parfum and let the generous notes fall gently on your hair and your clothing to create a magnetic halo around you. For even more intensity, apply the fragrance directly to your skin’s pulse points: your neck, your wrists, your elbows.</p>
+                </section>
+
+                <section class="ingredients">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>Parfum / Fragrance</li>
+                        <li>Aqua / Water / Eau</li>
+                        <li>Benzyl Salicylate</li>
+                        <li>Benzyl Alcohol</li>
+                        <li>Linalool</li>
+                        <li>Diethylamino Hydroxybenzoyl Hexyl Benzoate</li>
+                        <li>Coumarin</li>
+                        <li>Hydroxycitronellal</li>
+                        <li>Hexyl Cinnamal</li>
+                        <li>Methyl Anthranilate</li>
+                        <li>Limonene</li>
+                        <li>Citronellol</li>
+                        <li>Benzyl Benzoate</li>
+                        <li>Geraniol</li>
+                        <li>Eugenol</li>
+                        <li>Citral</li>
+                        <li>Isoeugenol</li>
+                        <li>CI 19140</li>
+                    </ul>
+                </section>                                      
             </div>
         </div>
     </main>
