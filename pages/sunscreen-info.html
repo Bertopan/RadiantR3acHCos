@@ -8,25 +8,26 @@
     <style>
         body {
             font-family: 'Arial', sans-serif; /* Set Arial as the default font */
-            font-size: 15px; /* Base font size */
+            font-size: 16px; /* Base font size */
             background-color: #f4f4f4; /* Light background color */
             margin: 0; /* Remove default margin */
             padding: 20px; /* Add padding around the body */
+            color: #3B3B3B; /* Dark gray for text */
         }
         .banner {
             background: linear-gradient(to right, #DDB8A8, #F8F4F1); /* Dusty blush to soft cream */
             text-align: center; /* Center align banner text */
-            padding: 10px 0; /* Padding for the banner */
-            margin-bottom: 20px; /* Space below the banner */
+            padding: 20px 0; /* Padding for the banner */
+            margin-bottom: 30px; /* Space below the banner */
             border-radius: 10px; /* Rounded corners for the banner */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the banner */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow for the banner */
         }
         .banner h1 {
-            font-family: 'allura'; /* Use the specified font */
+            font-family: 'Allura', cursive; /* Use the specified font */
             color: #3B3B3B; /* Dark gray */
-            font-size: 36px; /* Font size for banner heading */
+            font-size: 48px; /* Large font size */
             margin: 0; /* Remove default margin */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Softer text shadow */
         }
         header {
             text-align: center; /* Center align header text */
@@ -59,7 +60,7 @@
         }
         h2 {
             font-size: 24px; /* Font size for section headings */
-            color: #3B3B3B; /* Dark gray */
+            color: #DDB8A8; /* Soft blush for headings */
             margin-top: 0; /* Remove top margin */
             margin-bottom: 10px; /* Space below headings */
             border-bottom: 2px solid #DDB8A8; /* Underline for emphasis */
@@ -76,6 +77,12 @@
         li {
             margin-bottom: 5px; /* Space between list items */
         }
+        li::before {
+            content: "✔️"; /* Custom bullet point */
+            position: absolute; /* Positioning */
+            left: -20px; /* Space to the left */
+            color: #DDB8A8; /* Color for bullet point */
+        }
     </style>
 </head>
 <body>
@@ -83,7 +90,7 @@
         <h1>More info about WeGlow</h1>
     </div>
     <header>
-        <h1>More Infos</h1>
+        <h1></h1>
     </header>
     <main>
         <div class="info-container">
@@ -91,7 +98,7 @@
                 <img src="../assets/images/product pics/IMG_20241128_063529.jpg" alt="Product Image">
             </div>
             <div class="content-section">
-                <h2>Description</h2>
+                <h2>Product Description</h2>
                 <p>Experience the ultimate sun protection with WeGlow Sunscreen, a luxurious formula designed to shield your skin while leaving it feeling soft and radiant. Our high SPF 50 and PA+++ rating provide broad spectrum UVA/UVB protection, safeguarding your skin from the sun's harmful rays.</p>
                 <p>WeGlow Sunscreen is designed for everyone. Its gentle, non-comedogenic formula is suitable for all skin types, even the most sensitive. It's also paraben-free and leaves no white cast, making it ideal for all skin tones. The lightweight, non-sticky formula absorbs quickly, leaving your skin feeling soft, hydrated, and protected, not greasy. Enjoy your day with peace of mind, knowing your skin is safe and glowing with WeGlow Sunscreen. Whether you're enjoying a day at the beach, a hike in the mountains, or simply running errands, WeGlow Sunscreen is your perfect companion for a sun-kissed glow.</p>
 

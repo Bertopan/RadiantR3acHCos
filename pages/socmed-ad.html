@@ -38,9 +38,13 @@
             padding: 20px; /* Padding inside the section */
             margin-bottom: 30px; /* Space below each section */
         }
+        .video-thumbnail {
+            width: 100%; /* Full width for the video thumbnail */
+            max-width: 1000px; /* Set a maximum width for larger screens */
+        }
         .video-thumbnail iframe {
-            width: 90%; /* Make the video larger, adjust as needed */
-            max-width: 800px; /* Set a maximum width for larger screens */
+            width: 100%; /* Make the video take the full width of the container */
+            height: 450px; /* Keep the height fixed */
             border-radius: 10px; /* Rounded corners for videos */
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for videos */
         }
@@ -92,8 +96,10 @@
     <main>
         <section class="video-ad">
             <div class="video-thumbnail">
-                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=9jxagtL1Doo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/9jxagtL1Doo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+        </section>
+        
         <section class="team-section">
             <h3>Sunscribe</h3>
             <p><strong>Leader:</strong> Yambao, Richard</p>

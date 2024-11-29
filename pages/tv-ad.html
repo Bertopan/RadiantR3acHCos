@@ -33,14 +33,15 @@
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
             padding: 20px; /* Padding inside the section */
-            max-width: 600px; /* Max width for the video section */
+            max-width: 1000px; /* Max width for the video section */
             margin: auto; /* Center the section */
         }
         .video-thumbnail {
             text-align: center; /* Center align the video */
         }
-        video {
-            width: 80%; /* Set video width to 80% of the container */
+        .video-thumbnail iframe {
+            width: 1000px; /* Set video width to 1000px */
+            height: 450px; /* Set a fixed height for the video */
             border-radius: 10px; /* Rounded corners for the video */
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the video */
         }
@@ -83,7 +84,7 @@
         .info-section {
             margin-top: 20px; /* Space above the information section */
             padding: 15px; /* Padding inside the information section */
-            background: #f9f9f9; /* Light background for information section */
+            background: #f9f9f9;             /* Light background for information section */
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the information section */
         }
@@ -103,10 +104,7 @@
     <div class="video-ad">
         <div class="video-content">
             <div class="video-thumbnail">
-                <video controls>
-                    <source src="../assets/videos/TV-ad.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <iframe src="https://www.youtube.com/embed/G2_ua-dXReg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="1000" height="450"></iframe>
             </div>
             <div class="video-details">
                 <h2>TV Advertising Group Contributions</h2>
