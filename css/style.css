@@ -298,20 +298,27 @@ nav .logo {
 /* Styling for the second set of category images */
 .categories.second-set {
     margin-top: 40px; /* Add some space before the second set */
+    display: grid; /* Use grid layout instead of flexbox */
+    grid-template-columns: repeat(2, 1fr); /* Create two equal columns */
+    gap: 20px; /* Add space between grid items */
+    justify-items: center; /* Center the categories within their grid cells */
 }
 
 .categories.second-set .category {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative; /* Added to position hover images correctly */
+    margin: 10px; /* Optional margin; can be removed since grid handles spacing */
 }
 
 .categories.second-set img {
-    width: 300px;
-    height: 200px;
+    width: 300px; /* Set a fixed width for images */
+    height: 200px; /* Set a fixed height for images */
     object-fit: cover;
     border: 1px solid #3B3B3B; /* Deep Charcoal */
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out, transform 0.3s ease; /* Added transform for hover effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
 .categories.second-set img.main-image {
@@ -322,18 +329,19 @@ nav .logo {
     position: absolute;
     top: 0;
     left: 0;
-    width: 300px;
-    height: 200px;
+    width: 300px; /* Set width for hover image */
+    height: 200px; /* Set height for hover image */
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
 
-.categories.second-set:hover img.main-image {
-    opacity: 0;
+/* Apply hover effects only to individual category elements */
+.categories.second-set .category:hover img.main-image {
+    opacity: 0; /* Fade out main image */
 }
 
-.categories.second-set:hover img.hover-image {
-    opacity: 1;
+.categories.second-set .category:hover img.hover-image {
+    opacity: 1; /* Fade in hover image */
 }
 
 .categories.second-set p {
