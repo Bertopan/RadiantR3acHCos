@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'Allura';
+    src: url('../assets/fonts/Allura.ttf') format('truetype'); /* Adjust the path if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Precious';
+    src: url('../assets/fonts/Precious.ttf') format('truetype'); /* Adjust the path if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* General styling for the body */
 body {
     font-family: Arial, sans-serif;
@@ -111,7 +124,7 @@ nav .logo {
 
 .categories h2 {
     font-size: 30px;
-    margin-bottom: 0.5px;
+    margin-bottom: 0px;
     grid-column: span 2;
     text-align: center;
     color: #3B3B3B; /* Deep Charcoal */
@@ -639,4 +652,9 @@ body.print-ad img {
 /* Optional: Adjust the margin for the last image in a row */
 .item-image:last-child {
     margin-right: 0; /* Remove right margin for the last item */
+}
+
+.categories.additional-images img {
+    opacity: 1 !important; /* Ensure the images are fully visible */
+    transition: none !important; /* Disable any transition effects */
 }
