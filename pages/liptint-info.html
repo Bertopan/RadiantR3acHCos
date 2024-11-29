@@ -88,9 +88,15 @@
             background-color: #f39c12; /* Orange background for discount label */
             color: white; /* White text */
             padding: 5px 10px; /* Padding for the label */
-            border-radius: 5px; /* Rounded corners for the label */
+            border-radius: 5 px; /* Rounded corners for the label */
             display: inline-block; /* Inline block for label */
             margin-top: 5px; /* Space above the label */
+        }
+        .left {
+            flex-direction: row; /* Align items in a row for left alignment */
+        }
+        .right {
+            flex-direction: row-reverse; /* Align items in a row for right alignment */
         }
     </style>
 </head>
@@ -100,7 +106,7 @@
             <h1>More Information about Lux Aura</h1>
         </div>
         <div class="container">
-            <div class="item">
+            <div class="item left">
                 <img src="../assets/images/Photoshoot/IMG_20241113_151436.jpg" alt="Image 1" class="item-image">
                 <div class="item-text">
                     <p>Experience the magic of three in one glossy, matte, and raincoat that won’t fade or transfer.</p>
@@ -110,14 +116,14 @@
                     <p>In addition, it is available in a range of shades and has a lightweight, non-drying texture.</p>
                 </div>
             </div>
-            <div class="item">
+            <div class="item right">
                 <img src="../assets/images/Photoshoot/IMG_20241113_151658.jpg" alt="Image 2" class="item-image">
                 <div class="item-text right-align">
                     <p>Inspired by the shimmering waves of summer lakes, this silver-plated lip gloss combines deep matte and glossy textures for a unique and captivating effect.</p>
                     <p>This product is a 3 in 1 Lip Tint, 48-hour long-lasting, transfer proof and waterproof, and moisturizes and plumps.</p>
                 </div>
             </div>
-            <div class="item">
+            <div class="item left">
                 <img src="../assets/images/Photoshoot/IMG_20241113_151735.jpg" alt="Image 3" class="item-image">
                 <div class="item-text">
                     <h3>How to Use:</h3>
