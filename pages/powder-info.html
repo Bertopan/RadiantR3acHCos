@@ -4,26 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Info</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Set Arial as the default font */
+            font-size: 16px; /* Base font size */
+            background-color: #f4f4f4; /* Light background color */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add padding around the body */
+            color: #3B3B3B; /* Dark gray for text */
+        }
+        .banner {
+            background: linear-gradient(to right, #DDB8A8, #F8F4F1); /* Dusty blush to soft cream */
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            border-radius: 8px; /* Rounded corners for the banner */
+            margin-bottom: 30px; /* Add space below the banner */
+        }
+        .banner h1 {
+            font-family: 'Allura', cursive; /* Use a decorative font */
+            color: #3B3B3B; /* Dark gray */
+            font-size: 48px; /* Large font size */
+            margin: 0; /* Remove default margin */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Softer text shadow */
+        }
+        .info-container {
+            display: flex; /* Use flexbox for layout */
+            background: white; /* White background for content */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+            padding: 20px; /* Padding inside the section */
+            margin-bottom: 30px; /* Space below each section */
+        }
+        .left-side {
+            flex: 1; /* Take up equal space */
+            margin-right: 20px; /* Space between image and text */
+        }
+        .left-side img {
+            width: 100%; /* Responsive image */
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for images */
+        }
+        .right-side {
+            flex: 2; /* Take up more space */
+        }
+        h2 {
+            font-size: 26px; /* Font size for section headings */
+            color: #DDB8A8; /* Soft blush for headings */
+            margin-top: 0; /* Remove top margin */
+            border-bottom: 2px solid #DDB8A8; /* Underline for emphasis */
+            padding-bottom: 10px; /* Padding below the heading */
+        }
+        p {
+            line-height: 1.8; /* Increase line height for readability */
+            margin: 15px 0; /* Margin for paragraphs */
+        }
+        ul {
+            margin-left: 20px; /* Indent unordered list */
+            list-style-type: disc; /* Bullet style */
+        }
+        li {
+            margin-bottom: 8px; /* Space between list items */
+            position: relative; /* Position for pseudo-element */
+        }
+        li::before {
+            content: "✔️"; /* Custom bullet point */
+            position: absolute; /* Positioning */
+            left: -20px; /* Space to the left */
+            color: #DDB8A8; /* Color for bullet point */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1 class="center-text">More Infos</h1>
-    </header>
+    <div class="banner">
+        <h1>More Information about AuraGlow Face Powder</h1>
+    </div>
     <main>
         <div class="info-container">
             <div class="left-side">
-                <img src="your-product-image.jpg" alt="Product Image">
-                <!-- Add more images as needed -->
+                <img src="../assets/images/product pics/462563540_8697073583742569_7207764533238740917_n.jpg" alt="AuraGlow Face Powder Image">
             </div>
             <div class="right-side">
+                <h2>Product Description</h2>
+                <p>Presenting AuraGlow Face Powder, a multipurpose cosmetic tool that works for all skin types and enhances your face with a bright shine. This powder offers a soft-focus, luminous                 finish that lasts all day, making it perfect for everyday use. AuraGlow Face Powder enhances your complexion in a lovely way by providing the ideal balance between a natural glow and a dazzling aura. It effortlessly helps you achieve a glossy, radiant look, whether you are using it for touch-ups or a full makeup routine. This defining product is crafted to smooth and refresh your skin, emphasizing your natural beauty. AuraGlow Face Powder is ideal for people who want to look radiant and is appropriate for any occasion. It is especially helpful for people with dry skin. AuraGlow Face Powder gives you the assurance of glowing skin.</p>
+
+                <h2>How to Use</h2>
+                <ol>
+                    <li>Prep Your Skin.</li>
+                    <li>To get the desired coverage, use the right applicator.</li>
+                    <li>Apply a light layer of powder to the entire face for an even coverage.</li>
+                    <li>Blend well to avoid streaks.</li>
+                </ol>
+
+                <h2>Ingredients</h2>
                 <ul>
-                    <li>About</li>
-                    <li>Benefits</li>
-                    <li>How to Apply</li>
-                    <li>Ingredients</li>
-                    <li>Skin Tones</li>
+                    <li>Mica</li>
+                    <li>Magnesium Myristate</li>
+                    <li>Magnesium Stearate</li>
+                    <li>Polyethylene</li>
+                    <li>Silica</li>
+                    <li>Calcium</li>
+                    <li>Sodium Borosilicate</li>
+                    <li>Calcium Oxide</li>
+                    <li>Ethylhexyl Palmitate</li>
+                    <li>Dimethicone</li>
+                    <li>Caprylic/Capric Triglyceride</li>
+                    <li>Polyisobutylene</li>
+                    <li>Tocopheryl Acetate</li>
+                    <li>Phenoxyethanol</li>
                 </ul>
+
+                <h2>Benefits</h2>
+                <p>AuraGlow Face Powder has a multitude of benefits that make it a must-have in your makeup routine. Not only does it help to set your makeup for long-lasting wear, but it also ensures that your makeup stays in place without creasing or caking throughout the day. Additionally, the powder provides a shine-free finish, keeping your skin looking fresh and matte all day long.</p>
             </div>
         </div>
     </main>

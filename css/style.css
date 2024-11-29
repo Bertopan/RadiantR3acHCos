@@ -117,16 +117,16 @@ nav .logo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
     justify-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .categories h2 {
-    font-size: 30px;
-    margin-bottom: 0px;
-    grid-column: span 2;
     text-align: center;
+    font-size: 30px; /* Adjust size as needed */
+    margin: 20px 0; /* Adjust spacing as needed */
+    grid-column: span 2;
     color: #3B3B3B; /* Deep Charcoal */
 }
 
@@ -564,7 +564,7 @@ nav .logo {
 } /* Side Ad Styles */
 .side-ad {
     position: absolute;
-    top: 80%; /* Adjust this value as needed */
+    top: calc(80% + 100px); /* Adjust this value as needed */
     transform: translateY(-50%);
     width: 300px; /* Adjust width as needed */
     z-index: 9999;
