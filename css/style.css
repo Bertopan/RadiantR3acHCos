@@ -564,7 +564,7 @@ nav .logo {
 } /* Side Ad Styles */
 .side-ad {
     position: absolute;
-    top: calc(80% + 100px); /* Adjust this value as needed */
+    top: calc(80% + 1000px); /* Adjust this value as needed */
     transform: translateY(-50%);
     width: 300px; /* Adjust width as needed */
     z-index: 9999;
