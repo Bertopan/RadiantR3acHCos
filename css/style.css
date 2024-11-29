@@ -105,11 +105,12 @@ nav .logo {
 
 /* Styling for the tagline */
 .tagline h1 {
-    font-family: 'precious';
+    font-family: 'allura';
     text-align: center;
     margin: 20px 0;
     margin-bottom: 500px;
     color: #3B3B3B; /* Deep Charcoal */
+    font-size: 40px;
 }
 
 /* Grid layout for the categories */

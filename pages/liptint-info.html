@@ -68,16 +68,29 @@
             margin-left: 20px; /* Indent ordered list */
             font-size: 1em; /* Normal font size for ordered list */
         }
-        /* Additional styles for alternating layout */
-        .item:nth-child(even) .item-image {
-            margin-right: 0; /* Remove right margin for even items */
-            margin-left: 20px; /* Add left margin for even items */
+        /* Additional styles for price */
+        .price-container {
+            margin-top: 10px; /* Space above price section */
+            text-align: left; /* Align price text to the left */
         }
-        .item:nth-child(even) .item-text {
-            order: 1; /* Move text to the left for even items */
+        .original-price {
+            font-size: 16px; /* Font size for original price */
+            color: #999; /* Gray color for original price */
+            text-decoration: line-through; /* Strikethrough for original price */
         }
-        .item:nth-child(even) .item-image {
-            order: 2; /* Move image to the right for even items */
+        .discounted-price {
+            font-size: 20px; /* Font size for discounted price */
+            color: #e74c3c; /* Red color for discounted price */
+            font-weight: bold; /* Bold font for emphasis */
+            display: block; /* Display as block for better spacing */
+        }
+        .discount-label {
+            background-color: #f39c12; /* Orange background for discount label */
+            color: white; /* White text */
+            padding: 5px 10px; /* Padding for the label */
+            border-radius: 5px; /* Rounded corners for the label */
+            display: inline-block; /* Inline block for label */
+            margin-top: 5px; /* Space above the label */
         }
     </style>
 </head>
@@ -113,6 +126,11 @@
                         <li>Layer a small amount of the “raincoat” multiple times to create a protective film for long-lasting color.</li>
                         <li>If you prefer a matte finish, gently blot off the “raincoat” with a tissue after it has set.</li>
                     </ol>
+                    <div class="price-container">
+                        <span class="original-price">₱169.99</span>
+                        <span class="discounted-price">₱135.99</span>
+                        <span class="discount-label">20% OFF</span>
+                    </div>
                 </div>
             </div>
         </div>

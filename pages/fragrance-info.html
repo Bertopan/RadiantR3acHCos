@@ -74,6 +74,31 @@
             left: -20px; /* Space to the left */
             color: #DDB8A8; /* Color for bullet point */
         }
+        /* Price section styles */
+        .price-container {
+            text-align: center; /* Center align price text */
+            margin-top: 10px; /* Space above price section */
+        }
+        .original-price {
+            font-size: 16px; /* Font size for original price */
+            color: #999; /* Gray color for original price */
+            text-decoration: line-through; /* Strikethrough for original price */
+        }
+        .discounted-price {
+            font-size: 20px; /* Font size for discounted price */
+            color: #e74c3c; /* Red color for discounted price */
+            font-weight: bold; /* Bold font for emphasis */
+            display: block; /* Display as block for better spacing */
+        }
+        .discount-label {
+            background-color: #f39c12; /* Orange background for discount label */
+            color: white; /* White text */
+            padding: 5px 10px; /* Padding for the label */
+            border-radius: 5px; /* Rounded corners for the label */
+            margin-top: 5px; /* Space above the label */
+            font-weight: bold; /* Bold font for the label */
+            font-size: 14px; /* Font size for the discount label */
+        }
     </style>
 </head>
 <body>
@@ -84,7 +109,11 @@
         <div class="info-container">
             <div class="left-side">
                 <img src="../assets/images/product pics/IMG_20241128_063903.jpg" alt="Product Image">
-                <!-- Add more images as needed -->
+                <div class="price-container">
+                    <span class="original-price">₱499.99</span>
+                    <span class="discounted-price">₱399.99</span>
+                    <span class="discount-label">20% OFF</span>
+                </div>
             </div>
             <div class="right-side">
                 <section class="product-description">
