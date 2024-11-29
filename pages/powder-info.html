@@ -62,13 +62,14 @@
         }
         ul {
             margin-left: 20px; /* Indent unordered list */
-            list-style-type: disc; /* Bullet style */
+            list-style-type: none; /* Remove default bullet points */
         }
         li {
             margin-bottom: 8px; /* Space between list items */
             position: relative; /* Position for pseudo-element */
         }
-        li::before {
+        /* Checkmarks for ingredients */
+        .ingredients li::before {
             content: "✔️"; /* Custom bullet point */
             position: absolute; /* Positioning */
             left: -20px; /* Space to the left */
@@ -87,7 +88,7 @@
             </div>
             <div class="right-side">
                 <h2>Product Description</h2>
-                <p>Presenting AuraGlow Face Powder, a multipurpose cosmetic tool that works for all skin types and enhances your face with a bright shine. This powder offers a soft-focus, luminous                 finish that lasts all day, making it perfect for everyday use. AuraGlow Face Powder enhances your complexion in a lovely way by providing the ideal balance between a natural glow and a dazzling aura. It effortlessly helps you achieve a glossy, radiant look, whether you are using it for touch-ups or a full makeup routine. This defining product is crafted to smooth and refresh your skin, emphasizing your natural beauty. AuraGlow Face Powder is ideal for people who want to look radiant and is appropriate for any occasion. It is especially helpful for people with dry skin. AuraGlow Face Powder gives you the assurance of glowing skin.</p>
+                <p>Presenting AuraGlow Face Powder, a multipurpose cosmetic tool that works for all skin types and enhances your face with a bright shine. This powder offers a soft-focus, luminous finish that lasts all day, making it perfect for everyday use. AuraGlow Face Powder enhances your complexion in a lovely way by providing the ideal balance between a natural glow and a dazzling aura. It effortlessly helps you achieve a glossy, radiant look, whether you are using it for touch-ups or a full makeup routine. This defining product is crafted to smooth and refresh your skin, emphasizing your natural beauty. AuraGlow Face Powder is ideal for people who want to look radiant and is appropriate for any occasion. It is especially helpful for people with dry skin. AuraGlow Face Powder gives you the assurance of glowing skin.</p>
 
                 <h2>How to Use</h2>
                 <ol>
@@ -98,7 +99,7 @@
                 </ol>
 
                 <h2>Ingredients</h2>
-                <ul>
+                <ul class="ingredients"> <!-- Added class for styling checkmarks -->
                     <li>Mica</li>
                     <li>Magnesium Myristate</li>
                     <li>Magnesium Stearate</li>
